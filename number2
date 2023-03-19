@@ -1,0 +1,14 @@
+
+/*Создать массив строк. Написать функцию поиска самой длинной строки по переданному массиву./*
+<?php
+function findLongestString(array $strings): string
+{
+    $longest = '';
+    foreach ($strings as $string) {
+        if (strlen($string) > strlen($longest)) {
+            $longest = $string;
+        }
+    }
+    return $longest;
+}
+>?php
